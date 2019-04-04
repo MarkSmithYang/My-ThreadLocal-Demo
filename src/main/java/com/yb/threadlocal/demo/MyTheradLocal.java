@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * ThreadLocal有一个子类InheritableThreadLocal,使用这个变量就可以轻松的在子线程中依旧使用父线程中的本地变量
+ * 一般会把从jwt解析出的用户放进这个里面,这样就能在服务的其他地方获取到用户信息了
  * @author yangbiao
  * @Description:我的ThreadLocal的demo小类-->具体的调用在测试类
  * @date 2018/11/1
